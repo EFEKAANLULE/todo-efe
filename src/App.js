@@ -8,6 +8,7 @@ function App() {
       
     <h1>LETS GET STARTED!</h1>
     <DaysLeft></DaysLeft>
+    <DaysLeft></DaysLeft>
     </div>
   );
 }
