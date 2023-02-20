@@ -1,6 +1,7 @@
 
 import './App.css';
 import DaysLeft from './components/DaysLeft';
+import InputTask  from './components/InputTask';
 
 function App() {
 
@@ -16,10 +17,15 @@ function App() {
         return <DaysLeft title={tasks.title} daysleft={tasks.daysleft} date={tasks.date}/>
     });
 
+    const addTaskHandler = task =>{
+      console.log(task)
+    };
+
+
   return (
     <div>
       
-    <h1>LETS GET STARTED!</h1>
+    <InputTask onAddTask={addTaskHandler}></InputTask>
     {renderedTodo}
     
     </div>
