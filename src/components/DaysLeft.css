@@ -8,6 +8,9 @@
     border-radius: 12px;
     background-color: #4b4b4b;
   }
+  .date{
+    color: white;
+  }
   
   .days-left__description {
     display: flex;
