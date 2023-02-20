@@ -1,14 +1,15 @@
 import './DaysLeft.css';
-
+import React , {useState} from 'react';
 import './TasksDate';
 import TasksDate from './TasksDate';
 function DaysLeft(props) {
 
-    let title=props.title;
+  
+    const [title, setTitle] = useState(props.title);
 
     const clickHandler=() => {
-        console.log('Tıklandı !! ');
-        title='Updated!';
+
+        setTitle('Updated');
         console.log(title);
 
     }
