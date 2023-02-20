@@ -4,33 +4,24 @@ import DaysLeft from './components/DaysLeft';
 
 function App() {
 
-  const tasks =[
+  
+    const tasks =[
     { id:'t1', title:'Renew Insurance', daysleft:4,date: new Date(2021,2,21)},
     { id:'t2',title:'Clean the House', daysleft:20,date: new Date(2020,4,29)},
     { id:'t3',title:'Grocery Shopping', daysleft:29,date: new Date(2022,7,30)},
     { id:'t4',title:'Donate to Charity', daysleft:52,date: new Date(2022,5,5)},
+   ]; 
 
-  ];
-  function createDaysLeft(){
-
-    const daysleftarray=[];
-    for(let i=0; i<tasks.length; i++)
-    {
-      daysleftarray.push(<DaysLeft title = {tasks[i].title} daysleft={tasks[i].daysleft} date={tasks[i].date} ></DaysLeft>)
-    }
-    return daysleftarray;
-  }
+    const renderedTodo = tasks.map((tasks) => {
+        return <DaysLeft title={tasks.title} daysleft={tasks.daysleft} date={tasks.date}/>
+    });
 
   return (
     <div>
       
     <h1>LETS GET STARTED!</h1>
-    {createDaysLeft()}
-    {/*<DaysLeft title = {tasks[0].title} daysleft={tasks[0].daysleft} date={tasks[0].date} ></DaysLeft>
-    <DaysLeft title = {tasks[1].title} daysleft={tasks[1].daysleft} date={tasks[1].date} ></DaysLeft>
-    <DaysLeft title = {tasks[2].title} daysleft={tasks[2].daysleft} date={tasks[2].date} ></DaysLeft>
-    <DaysLeft title = {tasks[3].title} daysleft={tasks[3].daysleft} date={tasks[3].date} ></DaysLeft> */}
-
+    {renderedTodo}
+    
     </div>
   );
 }
