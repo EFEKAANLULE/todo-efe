@@ -2,7 +2,7 @@
 import './TaskForm.css';
 
 import { useState } from 'react';
-const TaskForm = (props) => {
+const TaskForm = (props) => { // we use props here for the bottom up data pass to InputTask class
 
     const[enteredTitle, setEnteredTitle]= useState('');
     const[enteredDays, setEnteredDays] = useState('');
@@ -55,7 +55,7 @@ const TaskForm = (props) => {
         <div className='new-task__controls'>
             <div className='new_task__control'>
                 <label> Date</label>
-                <input type='date' value={enteredDate} min="2019" max="2023" onChange={dateChangeHandler}/>
+                <input type='date' value={enteredDate} onChange={dateChangeHandler}/>
             </div>
         </div>
 

@@ -15,11 +15,11 @@ function DaysLeft(props) {
         <div className='days-left'>
             <TasksDate date={props.date} ></TasksDate>
             <div className='days-left__description'>
-                <h2>{title} </h2>
+                <h2>{props.title} </h2>
                 <p> Days Left:</p>
                 <div className='days-left__days'>{props.daysleft}</div>
             </div>
-            <button onClick={clickHandler} >Change Title</button>
+            <button onClick={clickHandler}>Change Title</button>
         </div>
     );
 }

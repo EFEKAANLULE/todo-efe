@@ -13,7 +13,6 @@ function TasksDate(props) {
 
         </div>
     );
-    
 }
 
 export default TasksDate;
