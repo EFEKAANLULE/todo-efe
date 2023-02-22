@@ -20,7 +20,7 @@ function DaysLeft(props) {
   return (
     <div className='days-left'>
       <TasksDate date={props.date}></TasksDate> 
-      <div className={`days-left__description${isDone ? ' done' : ''}`}>
+      <div className={`days-left__description${isDone ? ' done' : ''}`}> 
         <h2>{title}</h2>
         <p>Importance out of 10:</p>
         <div className='days-left__days'>{props.daysleft}</div>

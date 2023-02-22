@@ -21,17 +21,25 @@ const TaskForm = (props) => {
 
     const submitHandler = (event) => {
         event.preventDefault();
+        if (enteredTitle.trim().length !== 0 && enteredImportance.trim().length !==0 && enteredDate.trim().length!==0) {
+            console.log('input value is NOT empty');
+           
 
-        const taskData = {
-            title: enteredTitle,
-            importance: enteredImportance,
-            date: new Date(enteredDate)
-        };
+            const taskData = {
+                title: enteredTitle,
+                importance: enteredImportance,
+                date: new Date(enteredDate)
+            };
 
-        props.onSaveTaskData(taskData);
-        setEnteredTitle('');
-        setEnteredImportance('');
-        setEnteredDate('');
+            props.onSaveTaskData(taskData);  //enteredtaskdata, InputTask ın
+            setEnteredTitle('');
+            setEnteredImportance('');
+            setEnteredDate('');
+        }
+        else{
+            alert('Please enter a valid input');
+
+        }
     };
 
     return (

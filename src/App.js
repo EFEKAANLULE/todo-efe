@@ -28,7 +28,7 @@ function App() {
       title={task.title}
       daysleft={task.daysleft}
       date={task.date}
-      onDeleteTask={deleteTaskHandler}
+      onDeleteTask={deleteTaskHandler} //önemli!, ilk başta ben returnda göndermeye çalışıyodum.
     />
   ));
 
