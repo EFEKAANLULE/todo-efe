@@ -23,7 +23,7 @@ function App() {
 
   const renderedTodo = tasks.map((task) => (
     <DaysLeft
-      key={task.id}
+      key={task.id} // element ekleyince, inspect de refresh ( flash ) engellemek için.
       id={task.id}
       title={task.title}
       daysleft={task.daysleft}

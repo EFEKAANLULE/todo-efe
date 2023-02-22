@@ -15,9 +15,11 @@ function DaysLeft(props) {
     props.onDeleteTask(props.id);
   };
   
+// TasksDate olarak ayrı bir component açmak gereksiz, sadece deneyip görmek için yaptım. Bence daha çok akıl karıştırıcı.
+
   return (
     <div className='days-left'>
-      <TasksDate date={props.date}></TasksDate>
+      <TasksDate date={props.date}></TasksDate> 
       <div className={`days-left__description${isDone ? ' done' : ''}`}>
         <h2>{title}</h2>
         <p>Importance out of 10:</p>

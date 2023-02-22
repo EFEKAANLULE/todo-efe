@@ -8,7 +8,7 @@ const InputTask = (props) => {
         const newTask = {
         id: Math.random().toString(),
         title: enteredTaskData.title,
-        daysleft: enteredTaskData.importance,
+        daysleft: enteredTaskData.importance, // önce daysleft ekleyeyim dedim ama saçma oldu zaten tarih giriyor. Input olarak almak saçma o yüzden isimler farklı
         date: enteredTaskData.date
         };
         props.onAddTask(newTask);
