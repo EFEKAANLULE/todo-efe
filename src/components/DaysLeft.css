@@ -8,6 +8,12 @@
     border-radius: 12px;
     background-color: #4b4b4b;
   }
+
+  .done {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
   .date{
     color: white;
     width: 60px;
