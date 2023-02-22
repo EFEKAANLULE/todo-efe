@@ -11,7 +11,10 @@ function DaysLeft(props) {
   const clickHandler = () => {
     setIsDone(true);
   }
-
+  const deleteHandler = () => {
+    props.onDeleteTask(props.id);
+  };
+  
   return (
     <div className='days-left'>
       <TasksDate date={props.date}></TasksDate>
@@ -21,7 +24,7 @@ function DaysLeft(props) {
         <div className='days-left__days'>{props.daysleft}</div>
       </div>
       <button onClick={clickHandler}>Change to Done</button>
-      <button>Delete the Task</button>
+      <button onClick={deleteHandler} >Delete the Task</button>
     </div>
   );
 }
