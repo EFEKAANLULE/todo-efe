@@ -11,7 +11,7 @@ const InputTask = (props) => {
         daysleft: enteredTaskData.importance, // önce daysleft ekleyeyim dedim ama saçma oldu zaten tarih giriyor. Input olarak almak saçma o yüzden isimler farklı
         date: enteredTaskData.date
         };
-        props.onAddTask(newTask); // App e gönderme 
+        props.onAddTask(newTask); // App.js e data gönderme 
     };
   
             // bottom-up

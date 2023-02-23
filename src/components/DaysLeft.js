@@ -5,6 +5,7 @@ import TasksDate from './TasksDate';
 
 function DaysLeft(props) {
 
+  console.log(props.title);
   const [title] = useState(props.title);
   const [isDone, setIsDone] = useState(false);
 
@@ -15,7 +16,7 @@ function DaysLeft(props) {
     props.onDeleteTask(props.id);
   };
   
-// TasksDate olarak ayrı bir component açmak gereksiz, sadece deneyip görmek için yaptım. Bence daha çok akıl karıştırıcı.
+// TasksDate olarak ayrı bir component açmak gereksiz, sadece deneyip görmek için yaptım. Bence daha çok akıl karıştırıcı. ayrı ayrı kontrol gün ay
 
   return (
     <div className='days-left'>

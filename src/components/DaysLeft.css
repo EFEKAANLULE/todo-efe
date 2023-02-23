@@ -12,17 +12,18 @@
   .done {
     text-decoration: line-through;
     color: green;
+    text-decoration-thickness: 0.2em;
   }
   
   .date{
-    color: white;
-    width: 60px;
+    color: peru;
+    width: 80px;
     height: 60px;
-    border: 1px solid black;
+    border: 1px solid blue;
     
     padding-left: 10px;
     border-radius: 15px;
-    border-color: aliceblue;
+    border-color: white;
   }
   
   .days-left__description {
@@ -33,6 +34,10 @@
     flex-flow: column-reverse;
     justify-content: flex-start;
     flex: 1;
+  }
+  .days-left__description > p {
+    color: peru;
+    
   }
   
   .days-left h2 {

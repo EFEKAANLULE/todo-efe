@@ -5,6 +5,12 @@
   
 }
 
+.totaltasks{
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

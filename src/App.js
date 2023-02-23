@@ -13,7 +13,10 @@ function App() {
 
   const [tasks, setTasks] = useState(deneme_tasks);
 
+  let abc =3;
+
   const addTaskHandler = (task) => {
+    abc=7;
     setTasks((prevTasks) => [task, ...prevTasks]);
   };
 
@@ -32,10 +35,12 @@ function App() {
     />
   ));
 
+  console.log(abc);
   return (
     <div>
       <InputTask onAddTask={addTaskHandler} />
-      {renderedTodo}
+      <div className='totaltasks'>{renderedTodo} </div>
+      
     </div>
   );
 }
